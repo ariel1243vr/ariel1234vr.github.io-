@@ -1,0 +1,22 @@
+MI LIBRO DE CHINO — APP INSTALABLE PARA COMPUTADORA Y CELULAR
+
+Este paquete convierte el libro en una PWA instalable. Se usa el mismo enlace en computadora y celular; no es un APK nativo.
+
+PUBLICAR (necesario para instalar en ambos dispositivos)
+1. Sube el contenido de esta carpeta a un alojamiento de páginas estáticas con HTTPS (por ejemplo, GitHub Pages, Cloudflare Pages o Netlify).
+2. Mantén index.html, manifest.webmanifest, sw.js y la carpeta icons juntos en la raíz publicada.
+3. Abre el enlace HTTPS publicado una vez y espera a que cargue.
+
+INSTALAR
+- Android: abre el enlace en Chrome y elige “Instalar app” o “Añadir a pantalla de inicio”.
+- iPhone/iPad: abre el enlace en Safari, toca Compartir y elige “Añadir a pantalla de inicio”.
+- Windows/macOS/Linux: abre el enlace en Chrome o Edge y usa el icono Instalar de la barra de direcciones o el menú del navegador.
+
+USO Y DATOS
+- La aplicación funciona sin conexión después de la primera carga y guarda sus datos en el almacenamiento del navegador de cada dispositivo.
+- La versión local anterior y la app instalada tienen almacenamientos separados. Antes de migrar, exporta JSON en la versión anterior; luego impórtalo en la app instalada. Repite la importación en cada dispositivo si quieres llevar allí tus fichas.
+- Sigue usando Exportar JSON como copia de seguridad periódica. Los datos no se sincronizan automáticamente entre dispositivos.
+- La lectura/OCR de PDF puede requerir conexión a internet; el diccionario, las fichas y el resto de la app funcionan sin conexión después de la primera carga.
+
+PRUEBA LOCAL
+Puedes servir esta carpeta en la computadora con un servidor local y abrir http://localhost:8000. Para instalar en el teléfono, publica la carpeta con HTTPS y abre ese mismo enlace en el teléfono.
